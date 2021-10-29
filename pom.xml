@@ -12,7 +12,7 @@
     </parent>
 
     <groupId>com.oppo</groupId>
-    <artifactId>restlight-demo10</artifactId>
+    <artifactId>restlight-demo</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <repositories>
@@ -31,10 +31,9 @@
 
     <properties>
         <java.version>1.8</java.version>
-        <restlight.version>1.2.0-BUILD01-SNAPSHOT</restlight.version>
+        <restlight.version>0.1.1</restlight.version>
         <netty.version>4.1.48.Final</netty.version>
         <cabin.version>1.0.3-SNAPSHOT</cabin.version>
-
         <jackson.version>2.9.10</jackson.version>
     </properties>
 
@@ -75,13 +74,13 @@
 
         <!--Restlight starter-->
         <dependency>
-            <groupId>esa</groupId>
+            <groupId>io.esastack</groupId>
             <artifactId>restlight-starter</artifactId>
             <version>${restlight.version}</version>
         </dependency>
 
         <dependency>
-            <groupId>esa</groupId>
+            <groupId>io.esastack</groupId>
             <artifactId>restlight-ext-multipart-starter</artifactId>
             <version>${restlight.version}</version>
         </dependency>
@@ -114,7 +113,7 @@
 
     <build>
         <!--打包出来的文件名-->
-        <finalName>restlight-demo10dev</finalName>
+        <finalName>restlight-demo-dev</finalName>
         <!--源代码-->
         <sourceDirectory>src/main/java</sourceDirectory>
         <!--资源文件-->
