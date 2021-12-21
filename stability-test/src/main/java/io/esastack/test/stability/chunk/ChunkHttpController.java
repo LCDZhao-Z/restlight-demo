@@ -1,7 +1,5 @@
 package io.esastack.test.stability.chunk;
 
-import esa.httpserver.core.AsyncRequest;
-import esa.httpserver.core.AsyncResponse;
 import esa.restlight.spring.shaded.org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.stereotype.Controller;
 
@@ -19,13 +17,13 @@ public class ChunkHttpController {
         ThreadLocalRandom.current().nextBytes(BODY);
     }
 
-    @RequestMapping("/chunk")
-    public void handleChunk(AsyncRequest request, AsyncResponse response) {
-        if (request.body().length != MB) {
-            System.err.println("Unexpected request body size: " + request.body().length);
-        }
-
-        response.sendResult(200, BODY);
-    }
+//    @RequestMapping("/chunk")
+//    public void handleChunk(AsyncRequest request, AsyncResponse response) {
+//        if (request.body().length != MB) {
+//            System.err.println("Unexpected request body size: " + request.body().length);
+//        }
+//
+//        response.sendResult(200, BODY);
+//    }
 
 }

@@ -14,7 +14,7 @@ case "`uname`" in
 esac
 base=${bin_abs_path}/..
 
-appName=restlight-demo10
+appName=restlight-demo
 
 get_pid() {
         STR=$1
